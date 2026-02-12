@@ -1,4 +1,10 @@
 if (place_meeting(x, y, oPlayer) && !triggered) {
+	chance = 0.5; // 1/5 chance to win
+	
+	if (random(1) < chance){
+		room_goto(Win)
+	}
+	
     triggered = true;         // only trigger once
     global.room_flipped = !global.room_flipped;
 	

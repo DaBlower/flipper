@@ -29,6 +29,7 @@
     {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Win","path":"rooms/Win/Win.yy",},},
     {"id":{"name":"sFlag","path":"sprites/sFlag/sFlag.yy",},},
     {"id":{"name":"sPlatform","path":"sprites/sPlatform/sPlatform.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
@@ -38,6 +39,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Win","path":"rooms/Win/Win.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
