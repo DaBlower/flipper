@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlatform",
-    "path":"sprites/sPlatform/sPlatform.yy",
+    "name":"sTerrain",
+    "path":"sprites/sTerrain/sTerrain.yy",
   },
   "spriteMaskId":null,
   "visible":true,

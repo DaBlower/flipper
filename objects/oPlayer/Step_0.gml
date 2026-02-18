@@ -12,31 +12,35 @@ if (y > room_height or y < 0 or x > room_width or x < 0){
 }
 
 if keyboard_check(vk_right) {
+	
+	if (sprite_index != 0) {
+		sprite_index = 1;
+	}
 
     x_speed = walk_speed; 
 
-    image_xscale = -1; // flip heidi's sprite so she faces right
+    image_xscale = 0.5; // flip the player's sprite so she faces right
 
 } else if keyboard_check(vk_left) {
+	if (sprite_index != 0) {
+		sprite_index = 1;
+	}
 
     x_speed = -walk_speed; 
 
-    image_xscale = 1; // reset her sprite so she faces left
+    image_xscale = -0.5; // reset the sprite so it faces left
 
+} else {
+		if (sprite_index != 0) {
+		sprite_index = 1;
+	}
+	sprite_index = 1
 }
 
-if keyboard_check(vk_right) {  // if the right arrow key is pressed
 
-    x_speed = walk_speed;  // set the horizontal speed to heidi's walk_speed
-
-} else if keyboard_check(vk_left) {  // otherwise, if the left arrow key is pressed
-
-    x_speed = -walk_speed;  // set the horizontal speed to negative heidi's walk_speed, making her move left
-}
-
-if place_meeting(x,y + 1,oSolid){ // if player on ground
+if (tile_get_index(tilemap_get_at_pixel(tilemap_id, x, y)) != 0) { // if player on ground
 	if keyboard_check(vk_up) {
-		y_speed -= 7; // up is negative y in gamemaker
+		y_speed -= 8; // up is negative y in gamemaker
 	} else {
 		y_speed = 0; // so we dont fall through the ground
 	}

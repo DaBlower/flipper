@@ -1,6 +1,12 @@
 if (place_meeting(x, y, oPlayer) && !triggered) {
 	chance = 0.5; // 1/5 chance to win
 	
+	if (first_trigger) {
+		first_trigger = false;
+		chance = 0;
+	}
+	
+	
 	if (random(1) < chance){
 		room_goto(Win)
 	}

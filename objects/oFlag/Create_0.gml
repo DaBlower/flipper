@@ -3,6 +3,8 @@ image_alpha = 1;
 target_alpha = 0;
 fade_speed = 0.01;
 
+first_trigger = true;
+
 pos_index = 0;
 positions = [
 	[304,48],
