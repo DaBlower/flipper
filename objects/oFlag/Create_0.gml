@@ -3,7 +3,10 @@ image_alpha = 1;
 target_alpha = 0;
 fade_speed = 0.01;
 
-first_trigger = true;
+if (!variable_global_exists("first_trigger")) {
+    global.first_trigger = true;
+	show_debug_message("create");
+}
 
 pos_index = 0;
 positions = [
